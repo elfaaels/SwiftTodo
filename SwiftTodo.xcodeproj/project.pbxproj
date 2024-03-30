@@ -16,6 +16,7 @@
 		BBC1CB9B2BB7AA5E00687FC9 /* SwiftTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC1CB9A2BB7AA5E00687FC9 /* SwiftTodoTests.swift */; };
 		BBC1CBA52BB7AA5E00687FC9 /* SwiftTodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC1CBA42BB7AA5E00687FC9 /* SwiftTodoUITests.swift */; };
 		BBC1CBA72BB7AA5E00687FC9 /* SwiftTodoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC1CBA62BB7AA5E00687FC9 /* SwiftTodoUITestsLaunchTests.swift */; };
+		BBC1CBB52BB7ABAC00687FC9 /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC1CBB42BB7ABAC00687FC9 /* AddTodoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		BBC1CBA02BB7AA5E00687FC9 /* SwiftTodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC1CBA42BB7AA5E00687FC9 /* SwiftTodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTodoUITests.swift; sourceTree = "<group>"; };
 		BBC1CBA62BB7AA5E00687FC9 /* SwiftTodoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTodoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BBC1CBB42BB7ABAC00687FC9 /* AddTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		BBC1CB832BB7AA5D00687FC9 /* SwiftTodo */ = {
 			isa = PBXGroup;
 			children = (
+				BBC1CBB32BB7AB9600687FC9 /* Views */,
 				BBC1CB842BB7AA5D00687FC9 /* SwiftTodoApp.swift */,
 				BBC1CB862BB7AA5D00687FC9 /* ContentView.swift */,
 				BBC1CB882BB7AA5E00687FC9 /* Assets.xcassets */,
@@ -131,6 +134,14 @@
 				BBC1CBA62BB7AA5E00687FC9 /* SwiftTodoUITestsLaunchTests.swift */,
 			);
 			path = SwiftTodoUITests;
+			sourceTree = "<group>";
+		};
+		BBC1CBB32BB7AB9600687FC9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BBC1CBB42BB7ABAC00687FC9 /* AddTodoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +278,7 @@
 				BBC1CB912BB7AA5E00687FC9 /* SwiftTodo.xcdatamodeld in Sources */,
 				BBC1CB872BB7AA5D00687FC9 /* ContentView.swift in Sources */,
 				BBC1CB852BB7AA5D00687FC9 /* SwiftTodoApp.swift in Sources */,
+				BBC1CBB52BB7ABAC00687FC9 /* AddTodoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
