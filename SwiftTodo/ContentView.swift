@@ -10,19 +10,24 @@ import CoreData
 
 struct ContentView: View {
         @Environment(\.managedObjectContext) private var viewContext
-//        private var todos: FetchedResults<Todo>
+        @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \Todo.name, ascending: true)])
+    
+    var todos: FetchedResults<Todo>
 
     
-//        @FetchRequest(
-//            sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-//            animation: .default)
-    
-    @State private var showingAddTodoView: Bool = false
+        @State private var showingAddTodoView: Bool = false
     
     var body: some View {
         NavigationView {
-            List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-                Text("Hi")
+            List {
+                ForEach(self.todos, id: \.self) { todo in
+                    HStack {
+                        Text(todo.name ?? "Unknown")
+                        Spacer()
+                        Text(todo.priority ?? "Unknown")
+                    }
+                    
+                }
             }
             .navigationTitle("Todo")
             .navigationBarTitleDisplayMode(.inline)
