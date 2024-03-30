@@ -13,6 +13,9 @@ struct AddTodoView: View {
     
     @State private var name: String = ""
     @State private var priority: String = "Normal"
+    @State private var errorShowing: Bool = false
+    @State private var errorTitle: String = ""
+    @State private var errorMessage: String = ""
     
     let priorities = ["High", "Normal", "Low"]
     
@@ -31,15 +34,26 @@ struct AddTodoView: View {
                     
                     // MARK: - SAVE BUTTON
                     Button(action: {
-                        let todo = Todo(context: self.viewContext)
-                        todo.name = self.name
-                        todo.priority = self.priority
-                        
-                        do {
-                            try self.viewContext.save()
-                        } catch {
-                            print(error)
+                        if self.name != "" {
+                            let todo = Todo(context: self.viewContext)
+                            todo.name = self.name
+                            todo.priority = self.priority
+                            
+                            do {
+                                try self.viewContext.save()
+                                print("New Todo: \(todo.name ?? ""), Priority:\(todo.priority ?? "")")
+                            } catch {
+                                print(error)
+                            }
+                        } else {
+                            // ERROR
+                            self.errorShowing = true
+                            self.errorTitle = "Invalid"
+                            self.errorMessage = "Type Something..."
+                            return
                         }
+                        self.presentationMode.wrappedValue.dismiss()
+                      
                     }, label: {
                         Text("Save")
                     })
@@ -56,6 +70,9 @@ struct AddTodoView: View {
             })
             )
         }
+        .alert(isPresented: $errorShowing, content: {
+            Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("OK")))
+        })
     }
 }
 
