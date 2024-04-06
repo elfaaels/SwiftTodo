@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BB4A53B72BC0E3B700AF322C /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4A53B62BC0E3B700AF322C /* EmptyListView.swift */; };
+		BB4A53B92BC0F15300AF322C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4A53B82BC0F15300AF322C /* SettingsView.swift */; };
+		BB4A53BB2BC0F3BC00AF322C /* FormRowStaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4A53BA2BC0F3BC00AF322C /* FormRowStaticView.swift */; };
+		BB4A53BD2BC0F9CF00AF322C /* FormRowLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4A53BC2BC0F9CF00AF322C /* FormRowLinkView.swift */; };
 		BBC1CB852BB7AA5D00687FC9 /* SwiftTodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC1CB842BB7AA5D00687FC9 /* SwiftTodoApp.swift */; };
 		BBC1CB872BB7AA5D00687FC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC1CB862BB7AA5D00687FC9 /* ContentView.swift */; };
 		BBC1CB892BB7AA5E00687FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC1CB882BB7AA5E00687FC9 /* Assets.xcassets */; };
@@ -39,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		BB4A53B62BC0E3B700AF322C /* EmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
+		BB4A53B82BC0F15300AF322C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BB4A53BA2BC0F3BC00AF322C /* FormRowStaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRowStaticView.swift; sourceTree = "<group>"; };
+		BB4A53BC2BC0F9CF00AF322C /* FormRowLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRowLinkView.swift; sourceTree = "<group>"; };
 		BBC1CB812BB7AA5D00687FC9 /* SwiftTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC1CB842BB7AA5D00687FC9 /* SwiftTodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTodoApp.swift; sourceTree = "<group>"; };
 		BBC1CB862BB7AA5D00687FC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -143,6 +149,9 @@
 			children = (
 				BBC1CBB42BB7ABAC00687FC9 /* AddTodoView.swift */,
 				BB4A53B62BC0E3B700AF322C /* EmptyListView.swift */,
+				BB4A53B82BC0F15300AF322C /* SettingsView.swift */,
+				BB4A53BA2BC0F3BC00AF322C /* FormRowStaticView.swift */,
+				BB4A53BC2BC0F9CF00AF322C /* FormRowLinkView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -277,6 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB4A53B92BC0F15300AF322C /* SettingsView.swift in Sources */,
+				BB4A53BB2BC0F3BC00AF322C /* FormRowStaticView.swift in Sources */,
+				BB4A53BD2BC0F9CF00AF322C /* FormRowLinkView.swift in Sources */,
 				BBC1CB8E2BB7AA5E00687FC9 /* Persistence.swift in Sources */,
 				BBC1CB912BB7AA5E00687FC9 /* SwiftTodo.xcdatamodeld in Sources */,
 				BB4A53B72BC0E3B700AF322C /* EmptyListView.swift in Sources */,

@@ -17,6 +17,7 @@ struct ContentView: View {
     
         @State private var showingAddTodoView: Bool = false
         @State private var animatingButton: Bool = false
+        @State private var showingSettingsView: Bool = false
     
     var body: some View {
         NavigationView {
@@ -38,14 +39,14 @@ struct ContentView: View {
                 leading: EditButton(),
                 trailing:
                 Button(action: {
-                    self.showingAddTodoView.toggle()
+                    self.showingSettingsView.toggle()
                 },
                            label: {
-                    Image(systemName: "plus")
+                    Image(systemName: "paintbrush")
                         
                 })
-                    .sheet(isPresented: $showingAddTodoView, content: {
-                        AddTodoView().environment(\.managedObjectContext, self.viewContext)
+                    .sheet(isPresented: $showingSettingsView, content: {
+                      SettingsView()
                     })
             )
                 if todos.count == 0 {
