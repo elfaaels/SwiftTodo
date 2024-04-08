@@ -11,6 +11,18 @@
 		BB4A53B92BC0F15300AF322C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4A53B82BC0F15300AF322C /* SettingsView.swift */; };
 		BB4A53BB2BC0F3BC00AF322C /* FormRowStaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4A53BA2BC0F3BC00AF322C /* FormRowStaticView.swift */; };
 		BB4A53BD2BC0F9CF00AF322C /* FormRowLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4A53BC2BC0F9CF00AF322C /* FormRowLinkView.swift */; };
+		BBAF19592BC3A22D0078764A /* Pink.png in Resources */ = {isa = PBXBuildFile; fileRef = BBAF19502BC3A22D0078764A /* Pink.png */; };
+		BBAF195A2BC3A22D0078764A /* Blue Dark.png in Resources */ = {isa = PBXBuildFile; fileRef = BBAF19512BC3A22D0078764A /* Blue Dark.png */; };
+		BBAF195B2BC3A22D0078764A /* Pink Light.png in Resources */ = {isa = PBXBuildFile; fileRef = BBAF19522BC3A22D0078764A /* Pink Light.png */; };
+		BBAF195C2BC3A22D0078764A /* Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = BBAF19532BC3A22D0078764A /* Blue.png */; };
+		BBAF195D2BC3A22D0078764A /* Green Light.png in Resources */ = {isa = PBXBuildFile; fileRef = BBAF19542BC3A22D0078764A /* Green Light.png */; };
+		BBAF195E2BC3A22D0078764A /* Blue Light.png in Resources */ = {isa = PBXBuildFile; fileRef = BBAF19552BC3A22D0078764A /* Blue Light.png */; };
+		BBAF195F2BC3A22D0078764A /* Green Dark.png in Resources */ = {isa = PBXBuildFile; fileRef = BBAF19562BC3A22D0078764A /* Green Dark.png */; };
+		BBAF19602BC3A22D0078764A /* Green.png in Resources */ = {isa = PBXBuildFile; fileRef = BBAF19572BC3A22D0078764A /* Green.png */; };
+		BBAF19612BC3A22D0078764A /* Pink Dark.png in Resources */ = {isa = PBXBuildFile; fileRef = BBAF19582BC3A22D0078764A /* Pink Dark.png */; };
+		BBAF19652BC3A8C00078764A /* ThemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF19642BC3A8C00078764A /* ThemeModel.swift */; };
+		BBAF19672BC3A90F0078764A /* ThemeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF19662BC3A90F0078764A /* ThemeData.swift */; };
+		BBAF19692BC3A9850078764A /* ThemeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF19682BC3A9850078764A /* ThemeSettings.swift */; };
 		BBC1CB852BB7AA5D00687FC9 /* SwiftTodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC1CB842BB7AA5D00687FC9 /* SwiftTodoApp.swift */; };
 		BBC1CB872BB7AA5D00687FC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC1CB862BB7AA5D00687FC9 /* ContentView.swift */; };
 		BBC1CB892BB7AA5E00687FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC1CB882BB7AA5E00687FC9 /* Assets.xcassets */; };
@@ -45,6 +57,19 @@
 		BB4A53B82BC0F15300AF322C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BB4A53BA2BC0F3BC00AF322C /* FormRowStaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRowStaticView.swift; sourceTree = "<group>"; };
 		BB4A53BC2BC0F9CF00AF322C /* FormRowLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRowLinkView.swift; sourceTree = "<group>"; };
+		BBAF19502BC3A22D0078764A /* Pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pink.png; sourceTree = "<group>"; };
+		BBAF19512BC3A22D0078764A /* Blue Dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue Dark.png"; sourceTree = "<group>"; };
+		BBAF19522BC3A22D0078764A /* Pink Light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink Light.png"; sourceTree = "<group>"; };
+		BBAF19532BC3A22D0078764A /* Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue.png; sourceTree = "<group>"; };
+		BBAF19542BC3A22D0078764A /* Green Light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green Light.png"; sourceTree = "<group>"; };
+		BBAF19552BC3A22D0078764A /* Blue Light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue Light.png"; sourceTree = "<group>"; };
+		BBAF19562BC3A22D0078764A /* Green Dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green Dark.png"; sourceTree = "<group>"; };
+		BBAF19572BC3A22D0078764A /* Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Green.png; sourceTree = "<group>"; };
+		BBAF19582BC3A22D0078764A /* Pink Dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink Dark.png"; sourceTree = "<group>"; };
+		BBAF19622BC3A34C0078764A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BBAF19642BC3A8C00078764A /* ThemeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeModel.swift; sourceTree = "<group>"; };
+		BBAF19662BC3A90F0078764A /* ThemeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeData.swift; sourceTree = "<group>"; };
+		BBAF19682BC3A9850078764A /* ThemeSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSettings.swift; sourceTree = "<group>"; };
 		BBC1CB812BB7AA5D00687FC9 /* SwiftTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC1CB842BB7AA5D00687FC9 /* SwiftTodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTodoApp.swift; sourceTree = "<group>"; };
 		BBC1CB862BB7AA5D00687FC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +110,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BBAF194F2BC3A21B0078764A /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				BBAF19512BC3A22D0078764A /* Blue Dark.png */,
+				BBAF19552BC3A22D0078764A /* Blue Light.png */,
+				BBAF19532BC3A22D0078764A /* Blue.png */,
+				BBAF19562BC3A22D0078764A /* Green Dark.png */,
+				BBAF19542BC3A22D0078764A /* Green Light.png */,
+				BBAF19572BC3A22D0078764A /* Green.png */,
+				BBAF19582BC3A22D0078764A /* Pink Dark.png */,
+				BBAF19522BC3A22D0078764A /* Pink Light.png */,
+				BBAF19502BC3A22D0078764A /* Pink.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		BBAF19632BC3A8B00078764A /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				BBAF19642BC3A8C00078764A /* ThemeModel.swift */,
+				BBAF19662BC3A90F0078764A /* ThemeData.swift */,
+				BBAF19682BC3A9850078764A /* ThemeSettings.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 		BBC1CB782BB7AA5D00687FC9 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +159,9 @@
 		BBC1CB832BB7AA5D00687FC9 /* SwiftTodo */ = {
 			isa = PBXGroup;
 			children = (
+				BBAF19632BC3A8B00078764A /* Theme */,
+				BBAF19622BC3A34C0078764A /* Info.plist */,
+				BBAF194F2BC3A21B0078764A /* Icons */,
 				BBC1CBB32BB7AB9600687FC9 /* Views */,
 				BBC1CB842BB7AA5D00687FC9 /* SwiftTodoApp.swift */,
 				BBC1CB862BB7AA5D00687FC9 /* ContentView.swift */,
@@ -260,8 +314,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBAF195D2BC3A22D0078764A /* Green Light.png in Resources */,
+				BBAF195E2BC3A22D0078764A /* Blue Light.png in Resources */,
+				BBAF19592BC3A22D0078764A /* Pink.png in Resources */,
 				BBC1CB8C2BB7AA5E00687FC9 /* Preview Assets.xcassets in Resources */,
+				BBAF195B2BC3A22D0078764A /* Pink Light.png in Resources */,
+				BBAF195C2BC3A22D0078764A /* Blue.png in Resources */,
+				BBAF195F2BC3A22D0078764A /* Green Dark.png in Resources */,
+				BBAF195A2BC3A22D0078764A /* Blue Dark.png in Resources */,
 				BBC1CB892BB7AA5E00687FC9 /* Assets.xcassets in Resources */,
+				BBAF19612BC3A22D0078764A /* Pink Dark.png in Resources */,
+				BBAF19602BC3A22D0078764A /* Green.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,10 +352,13 @@
 				BB4A53B92BC0F15300AF322C /* SettingsView.swift in Sources */,
 				BB4A53BB2BC0F3BC00AF322C /* FormRowStaticView.swift in Sources */,
 				BB4A53BD2BC0F9CF00AF322C /* FormRowLinkView.swift in Sources */,
+				BBAF19672BC3A90F0078764A /* ThemeData.swift in Sources */,
 				BBC1CB8E2BB7AA5E00687FC9 /* Persistence.swift in Sources */,
 				BBC1CB912BB7AA5E00687FC9 /* SwiftTodo.xcdatamodeld in Sources */,
+				BBAF19692BC3A9850078764A /* ThemeSettings.swift in Sources */,
 				BB4A53B72BC0E3B700AF322C /* EmptyListView.swift in Sources */,
 				BBC1CB872BB7AA5D00687FC9 /* ContentView.swift in Sources */,
+				BBAF19652BC3A8C00078764A /* ThemeModel.swift in Sources */,
 				BBC1CB852BB7AA5D00687FC9 /* SwiftTodoApp.swift in Sources */,
 				BBC1CBB52BB7ABAC00687FC9 /* AddTodoView.swift in Sources */,
 			);
@@ -461,9 +527,11 @@
 				DEVELOPMENT_TEAM = PFSN649J32;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftTodo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "\"\"";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -490,9 +558,11 @@
 				DEVELOPMENT_TEAM = PFSN649J32;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftTodo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "\"\"";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (

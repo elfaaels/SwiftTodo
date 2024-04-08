@@ -10,11 +10,48 @@ import SwiftUI
 struct SettingsView: View {
     @Environment(\.presentationMode) var presentationMode
     
+    let themes: [Theme] = themeData
+    @ObservedObject var theme = ThemeSettings.shared
+    @State private var isThemeChanged = false
+
+
     var body: some View {
         NavigationView {
             VStack(alignment: .center, spacing: 0) {
                 // MARK: - FORM
                 Form {
+                    // MARK: - SECTION 2
+                    Section(header: 
+                                HStack {
+                        Text("App Theme")
+                        Image(systemName: "circle.fill")
+                            .resizable()
+                            .frame(width: 10, height: 10)
+                            .foregroundColor(themes[self.theme.themeSettings].themeColor)
+                    }) {
+                        List {
+                            ForEach(themes, id: \.id) { item in
+                                Button(action: {
+                                    self.theme.themeSettings = item.id
+                                    UserDefaults.standard.set(self.theme.themeSettings, forKey: "Theme")
+                                    self.isThemeChanged.toggle()
+                                }, label: {
+                                    HStack {
+                                        Image(systemName: "circle.fill")
+                                            .foregroundColor(item.themeColor)
+                                        Text(item.themeName)
+                                    }
+                                })
+                                .accentColor(Color.primary)
+                              
+                            }
+                        }
+                    }
+                    .padding(.vertical, 3)
+                    .alert(isPresented: $isThemeChanged) {
+                        Alert(title: Text("Success!"), message: Text("App has been changed to the \(themes[self.theme.themeSettings].themeName). Now close and restart the App"), dismissButton: .default(Text("OK")))
+                    }
+                    
                     // MARK: - SECTION 3
                     Section(header: Text("Others")) {
                         FormRowLinkView(icon: "globe", color: Color.pink, text: "Github", link: "https://github.com/elfaaels")
@@ -50,6 +87,8 @@ struct SettingsView: View {
             .navigationBarTitleDisplayMode(.inline)
             .background(Color("ColorBackground").edgesIgnoringSafeArea(.all))
         }
+        .accentColor(themes[self.theme.themeSettings].themeColor)
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
